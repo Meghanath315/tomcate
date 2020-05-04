@@ -8,10 +8,10 @@ job('Tomcat') {
         triggers {
         scm('H/5 * * * *')
     }
-        wrappers {
-       maven('maven') // this is the namme of NodeJS installation in
+//        wrappers {
+//       maven('maven') // this is the namme of NodeJS installation in
                         // Manage Jenkins -> NodeJS Installations -> Name
-        }
+//        }
         steps {
             shell("./test-tom.yml")
                 }
